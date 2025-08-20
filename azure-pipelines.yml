@@ -1,4 +1,9 @@
 - task: TerraformTask@5
+- task: AzureCLI@2
+  inputs:
+    scriptType: 'ps'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az login --service-principal -u d4598acc-c1ea-4e73-be8e-9a93061fbc4a -p 8*$24p(!UVQJf"sy --tenant 8b255d37-387e-40db-a9af-f7007793050a'
   inputs:
     provider: 'azurerm'
     command: 'init'
